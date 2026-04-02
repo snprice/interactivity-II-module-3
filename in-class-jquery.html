@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jquery Demo</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file if you have one-->
+
+</head>
+<body>
+
+    <button id="thisButton">Click Me</button>
+
+    <p id="message">Nothing happened yet</p>
+
+    <script>  
+
+        const button = document.getElementById("thisButton");
+        // find the button
+
+        button.addEventListener("click", function() {
+        // wait for click
+
+        document.getElementById("message").innerText =
+        "Everything's pink now!!!";
+        // change the text
+
+        document.body.style.backgroundColor = "pink";
+        // change the background color
+
+        document.body.style.fontSize = "xx-large";
+        // change the text size
+        });
+    
+    </script>
+
+</body>
+</html>
