@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaelyn event-Listener Demo</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file if you have one-->
+
+</head>
+<body>
+
+    <button id="myButton">Hover over me for a secret...</button>
+
+    <p id="demo"></p>
+    
+    <script>
+        const btn = document.getElementById("myButton");
+        
+        btn.addEventListener("mouseover", function () {
+            document.getElementById("demo").innerText = "You're awesome! :)";
+        });
+    </script>
+
+</body>
+</html>
