@@ -8,9 +8,48 @@
 </head>
 <body>
 
-<h1>This is the index page</h1>
+<center>
 
-<script></script> 
+<a href="https://www.poetryfoundation.org/poetrymagazine/browse?volume=31&issue=5&page=27">"Earth Grows Old" by Audrey Wurdemann</a>
+
+<br>
+<br>
+
+<button id="imagebutton" onclick="changeImage()">
+    Soundless she turns on poles of crystaline
+    <br>
+    And ancient ice, where steadfastly she's grown,
+    <br>
+    Leaf-garmented and wrapped in living green
+    <br>
+    That merges in the agate veins of stone.
+    <br>
+    Wearied with fruitful years, she, in a way
+    <br>
+    That planets have, essays a knowing smile,
+    <br>
+    Not to be thought too old for many a day--
+    <br>
+    Death's all the kinder if he waits awhile.
+</button>
+
+<br>
+<br>
+
+<img id="mainimage" src="/images/nature 1.jpg"></img>
+
+<script>  
+
+    const button = document.getElementById("imagebutton");
+    // find the image
+        
+    function changeImage (){
+        document.getElementById("mainimage").src = "/images/pollution 1.jpg"
+    }
+
+</script> 
+
+</center>
 
 </body>
 </html>
