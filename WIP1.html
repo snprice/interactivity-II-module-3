@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WIP 1: Prototype</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file if you have one-->
+</head>
+<body>
+<center>
+
+<br>
+<br>
+
+<p class="question">Where would you like to shop from?</p>
+
+<select name="store" class="dropdown" onmousedown="this.value='';" onchange="popUp(this.value);">
+  <option value="Uh-oh! Their clothes are made in sweatshops. Try again!">Kyute Stylez!</option>
+  <option value="Uh-oh! Their products are farmed by literal slaves. Try again!">Fresh Grocery</option>
+  <option value="Uh-oh! Their CEO is racist and funds alt-right politicans. Try again!">GoodHome Necessities</option>
+  <option value="Uh-oh! Their profits go to funding a genocide. Try again!">FastBurger</option>
+</select>
+
+<br>
+<br>
+
+<button onclick="submitAttempt()">Submit</button>
+
+<script>
+function popUp(value) {
+    alert(value);
+}
+
+function submitAttempt() {
+    alert("Are you sure? You're a bad person if you give them money. Try choosing a non-problematic option!");
+}
+</script>
+
+</center>
+</body>
+</html>
