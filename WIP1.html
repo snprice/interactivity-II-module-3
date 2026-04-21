@@ -7,19 +7,57 @@
 <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file if you have one-->
 </head>
 <body>
+
+<br>
+<br>
+
+<div class="banner"></div>
+
+<center>
+    <div class="white"></div>
+</center>
+
+<div class="black"></div>
+
+<img class="cart" src="images/shoppingcart.png"
+width="50px" height="50px"></img>
+
+<p class="welcome">Welcome!</p>
+
+<p class="suggestion">Here's some great finds we think you'll like:</p>
+
+<br>
+<br>
+
 <center>
 
-<br>
-<br>
+<div class="options">
+    <img class="items" src="images/shoppingcart.png"
+    width="100px" height="100px"></img>
 
-<p class="question">Where would you like to shop from?</p>
+    <img class="items" src="images/shoppingcart.png"
+    width="100px" height="100px"></img>
 
-<select name="store" class="dropdown" onmousedown="this.value='';" onchange="popUp(this.value);">
-  <option value="Uh-oh! Their clothes are made in sweatshops. Try again!">Kyute Stylez!</option>
-  <option value="Uh-oh! Their products are farmed by literal slaves. Try again!">Fresh Grocery</option>
-  <option value="Uh-oh! Their CEO is racist and funds alt-right politicans. Try again!">GoodHome Necessities</option>
-  <option value="Uh-oh! Their profits go to funding a genocide. Try again!">FastBurger</option>
-</select>
+    <img class="items" src="images/shoppingcart.png"
+    width="100px" height="100px"></img>
+
+    <img class="items" src="images/shoppingcart.png"
+    width="100px" height="100px"></img>
+</div>
+
+<div class="options">
+    <button onclick="popUp(this.value)" 
+    class="addcart"
+    value="Kyute Stylez TEST">STTYLiZ Womens Summer Dresses Casual...</button>
+
+    <button onclick="popUp(this.value)" class="addcart" 
+    value="Fresh Grocery TEST ">Fresh Grocery</button>
+
+    <button onclick="popUp(this.value)" class="addcart" 
+    value="GoodHome Necessities TEST ">GoodHome Necessities</button>
+
+    <button onclick="popUp(this.value)" class="addcart" value="FastBurger TEST ">FastBurger</button>
+</div>
 
 <br>
 <br>
