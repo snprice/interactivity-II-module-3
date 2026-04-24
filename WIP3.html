@@ -13,7 +13,12 @@
 
 <div class="banner"></div>
 
+<img class="search" src="images/search.jpg"
+width="40px" height="40px"></img>
+
 <center>
+    <div class="searchbar"></div>
+
     <div class="white"></div>
 </center>
 
@@ -32,44 +37,42 @@ width="50px" height="50px"></img>
 <center>
 
 <div class="options">
-    <img class="items" src="images/shoppingcart.png"
-    width="100px" height="100px"></img>
+    <img class="items" src="images/dress.jpg"></img>
 
-    <img class="items" src="images/shoppingcart.png"
-    width="100px" height="100px"></img>
-
-    <img class="items" src="images/shoppingcart.png"
-    width="100px" height="100px"></img>
-
-    <img class="items" src="images/shoppingcart.png"
-    width="100px" height="100px"></img>
-</div>
-
-<div class="options">
     <button onclick="popUp(this.value)" 
     class="addcart"
-    value="Kyute Stylez TEST">STTYLiZ Womens Summer Dresses Casual...</button>
+    value="message">
+    STTYLiZ Womens Summer Dresses Casual</button>
+
+    <img class="items" src="images/gummies.jpg"></img>
 
     <button onclick="popUp(this.value)" class="addcart" 
-    value="Fresh Grocery TEST ">Fresh Grocery</button>
+    value="Fre-SH message">
+    Fre-SH Delicious Natural Fruit Gummies</button>
+
+    <img class="items" src="images/utensils.jpg"></img>
 
     <button onclick="popUp(this.value)" class="addcart" 
-    value="GoodHome Necessities TEST ">GoodHome Necessities</button>
+    value="GoodHome message">
+    Kitchen Wodden Utensil Set GoodHome Brand</button>
 
-    <button onclick="popUp(this.value)" class="addcart" value="FastBurger TEST ">FastBurger</button>
+    <img class="items" src="images/phone.jpg"></img>
+
+    <button onclick="popUp(this.value)" class="addcart" 
+    value="FastBurger message ">AnyFone Unbreakable Phone Case Rainbow</button>
 </div>
 
 <br>
 <br>
 
-<button onclick="submitAttempt()">Submit</button>
+<button class="checkout" onclick="checkOut()">Check Out</button>
 
 <script>
 function popUp(value) {
     alert(value);
 }
 
-function submitAttempt() {
+function checkOut() {
     alert("Are you sure? You're a bad person if you give them money. Try choosing a non-problematic option!");
 }
 </script>
