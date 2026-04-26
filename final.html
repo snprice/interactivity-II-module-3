@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Now!</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file if you have one-->
+</head>
+<body>
+
+<br>
+<br>
+
+<div class="banner"></div>
+
+<img class="search" src="images/search.jpg"
+width="40px" height="40px"></img>
+
+<center>
+    <div class="searchbar"></div>
+
+    <div class="white"></div>
+</center>
+
+<div class="black"></div>
+
+<img class="cart" src="images/shoppingcart.png"
+width="50px" height="50px"></img>
+
+<p class="welcome">Welcome!</p>
+
+<p class="suggestion">Here's some great finds we think you'll like:</p>
+
+<br>
+<br>
+
+<center>
+
+<div class="options">
+    <img class="items" src="images/dress.jpg"></img>
+
+    <button onclick="popUp(this.value)" 
+    class="addcart"
+    value="I think I saw that their clothes are made in sweatshops...">
+    STTYLiZ Womens Summer Dresses Casual</button>
+
+    <img class="items" src="images/gummies.jpg"></img>
+
+    <button onclick="popUp(this.value)" class="addcart" 
+    value="This company uses literal slavery, right? That's what I read...">
+    Fre-SH Delicious Natural Fruit Gummies</button>
+
+    <img class="items" src="images/utensils.jpg"></img>
+
+    <button onclick="popUp(this.value)" class="addcart" 
+    value="Doesn't their CEO donate to alt-right politicians? I think I read an article about that...">
+    Kitchen Wodden Utensil Set GoodHome Brand</button>
+
+    <img class="items" src="images/phone.jpg"></img>
+
+    <button onclick="popUp(this.value)" class="addcart" 
+    value="I'm pretty sure I saw that this company is funding genocide...">
+    AnyFone Unbreakable Phone Case Rainbow</button>
+</div>
+
+<br>
+<br>
+
+<button class="checkout" onclick="checkOut()">Check Out</button>
+
+<br>
+
+<a class="alternate" href="/alternate.html">it's not the only option</a>
+
+<script>
+function popUp(value) {
+    alert(value);
+}
+
+function checkOut() {
+    alert("I don't want to give money to any of these companies... but it's like every option is bad. What am I supposed to do?");
+}
+</script>
+
+</center>
+</body>
+</html>
